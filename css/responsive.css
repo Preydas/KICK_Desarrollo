@@ -1,0 +1,55 @@
+/*-----CSS RESPONSIVO-----
+@media screen and (max-width: 1100px) {
+  header .nav-bar {
+    padding: 0 50px;
+  }
+  .section {
+    padding: 25px 50px;
+  }
+  .swiper-slide .text-content {
+    margin: 0 120px 0 50px;
+  }
+}
+/* Estilos para dispositivos pequeños (smartphones) */
+@media screen and (max-width: 375px) {
+  header .navmenu {
+    padding: 25px 20px;
+  }
+  .swiper-slide .text-content {
+    top: 10%;
+    margin: 0 20px 0 20px;
+  }
+  .swiper-slide .text-content h2 {
+    font-size: 3em;
+  }
+  .swiper-slide .text-content p {
+    font-size: 0.9em;
+  }
+  .bg-slider-thumbs {
+    bottom: -15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .navmenu {
+    padding: 25px 20px;
+  }
+  .swiper-slide .text-content {
+    top: 10%;
+    margin: 0 20px 0 20px;
+  }
+  .swiper-slide .text-content h2 {
+    font-size: 3em;
+  }
+  .swiper-slide .text-content p {
+    font-size: 0.9em;
+  }
+  .bg-slider-thumbs {
+    bottom: -15%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .navmenu, .nav-icon{
+    display: none;
+  }
+}
+
