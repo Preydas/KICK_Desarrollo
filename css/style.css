@@ -25,6 +25,139 @@ body {
   font-size: 16px; /* Tamaño de fuente */
   font-weight: bold; /* Negrita */
 }
+/*----------LOGIN---------*/
+.blur-bg-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 888;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s ease;
+}
+.account-form{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  border: 2px solid #fff;
+  transform: translate(-50%, -100%);
+  z-index: 888;
+  max-width: 720px;
+  width: 95%;
+  opacity: 0;
+  pointer-events: none;
+}
+/*Script*/
+.show-login .account-form{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease, opacity 0.1s
+}
+.show-login .blur-bg-overlay{
+  opacity: 1;
+  pointer-events: auto;
+}
+.account-form .form-box{
+  display: flex;
+}
+.account-form .signup,
+.account-form.show-signup .login{
+  display: none;
+}
+.account-form.show-signup .signup{
+  display: flex;
+}
+.account-form .close-btn{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+.form-box .form-details{
+  max-width: 330px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.form-box h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-box .form-content{
+  width: 100%;
+  padding: 35px;
+}
+form .input-field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+form .input-field input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 0.95rem;
+  border: 1px solid #000;
+}
+.form-box a{
+  color: #ff0000;
+}
+form button{
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 14px 0;
+  margin: 25px 0;
+  color: #fff;
+  cursor: pointer;
+  background: #000;
+  transition: 0.2s ease;
+}
+form button:hover {
+  color: #ff0000;
+}
+.form-box .forgot-pass{
+  display: inline-flex;
+  margin-top: 14px;
+  font-size: 0.95rem;
+}
+.form-box .bottom-link{
+  text-align: center;
+}
+.login .form-details{
+  background: url("../images/login-img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.signup .form-details{
+  background: url("../images/login-img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.signup .policy-text{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.signup .policy-text input{
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+}
+
 /*-----BARRA PRINCIPAL----*/
 header {
   width: 100%;
@@ -209,7 +342,6 @@ main {
 .bg-slider-thumbs {
   z-index: 777;
   position: absolute;
-  bottom: -5%;
   left: 50%;
   transform: translateX(-50%);
   transition: 0.3s ease;

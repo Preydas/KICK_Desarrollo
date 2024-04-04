@@ -28,7 +28,7 @@
     <div class="announcement-bar" role="region" aria-label="Announcement">
         <div class="page-width">
             <p class="announcement-bar__message center h5">
-                <span>We offer WORLDWIDE shipping!</span>
+                <p id="emailDisplay">We offer WORLDWIDE shipping!</p>
             </p>
         </div>
     </div>
@@ -45,11 +45,70 @@
             <a href="#">Contactenos</a>
         </nav>
         <div class="nav-icon">
-            <a href="#"><i class='bx bx-search' style='color:#ffffff'></i></a>
-            <a href="#"><i class='bx bx-user' style='color:#ffffff'></i></a>
+            <a href="#"><i class='login-btn bx bx-user' style='color:#ffffff'></i></a>
             <a href="#"><i class='bx bx-cart' style='color:#ffffff'></i></a>
         </div>
     </header>
+    <!--------LOGIN FORM-------->
+    <div class="blur-bg-overlay"></div>
+    <div class="account-form">
+        <i class='close-btn bx bx-x'></i>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Bienvenido de vuelta</h2>
+                <p>Por favor iniciar sesión</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-field">
+                        <input type="text" id="emailInput" placeholder="Correo electrónico">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
+                    <a href="#" class="forgot-pass">¿Olvidaste la contraseña?</a>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                <div class="bottom-link">
+                    ¿No tienes cuenta aún?
+                    <a href="#" id="signup-link">Registrarse</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Crea una cuenta</h2>
+                <p>Para ser parte de nuestra comunidad, por favor ingrese sus datos</p>
+            </div>
+            <div class="form-content">
+                <h2>REGISTRARSE</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Correo electrónico">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Confirmar contraseña" required>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            Estoy de acuerdo con los
+                            <a href="#">terminos y condiciones</a>
+                        </label>
+                    </div>
+                    <button type="submit">Registrarse</button>
+                </form>
+                <div class="bottom-link">
+                    ¿Ya tienes una cuenta?
+                    <a href="#" id="login-link">Inicia sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--------MAIN-------->
     <section class="main">
         <div class="swiper bg-slider">
@@ -194,6 +253,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

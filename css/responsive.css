@@ -1,15 +1,4 @@
-/*-----CSS RESPONSIVO-----
-@media screen and (max-width: 1100px) {
-  header .nav-bar {
-    padding: 0 50px;
-  }
-  .section {
-    padding: 25px 50px;
-  }
-  .swiper-slide .text-content {
-    margin: 0 120px 0 50px;
-  }
-}
+/*-----CSS RESPONSIVO-----*/
 /* Estilos para dispositivos pequeños (smartphones) */
 @media screen and (max-width: 375px) {
   .swiper-slide .text-content {
@@ -27,6 +16,9 @@
   }
   .contact input {
     width: 90%;
+  }
+  .form-box .form-details{
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
@@ -46,6 +38,9 @@
   .contact input {
     width: 100%;
   }
+  .form-box .form-details{
+    display: none;
+  }
 }
 @media screen and (max-width: 840px) {
   .navmenu {
@@ -53,5 +48,8 @@
   }
   .contact input {
     width: 100%;
+  }
+  .form-box .form-details{
+    display: none;
   }
 }
